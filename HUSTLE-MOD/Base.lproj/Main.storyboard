@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HUSTLE_MOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="o6F-bI-0cA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXy-d9-mop">
+                                <rect key="frame" x="140" y="286" width="96" height="96"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wq3-iI-aW7"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYa-bU-161">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="oAy-wF-W0e">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="371"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="371" id="xoR-PW-Ksb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Bc-0eO">
+                                        <rect key="frame" x="0.0" y="178" width="375" height="489"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="489" id="CuZ-Dq-hNN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUSTLE-MOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-An-8R3">
+                                        <rect key="frame" x="58" y="362" width="258" height="55"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSQ-KC-kbx">
+                                        <rect key="frame" x="147" y="425" width="81" height="96"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.54117647058823526" blue="0.94901906074929954" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JSQ-KC-kbx" secondAttribute="trailing" id="BnI-34-bXA"/>
+                                    <constraint firstItem="y3x-An-8R3" firstAttribute="top" secondItem="AYa-bU-161" secondAttribute="top" constant="362" id="C9P-9O-Gav"/>
+                                    <constraint firstItem="JSQ-KC-kbx" firstAttribute="top" secondItem="y3x-An-8R3" secondAttribute="bottom" constant="8" id="Qec-AW-OsO"/>
+                                    <constraint firstItem="y3x-An-8R3" firstAttribute="leading" secondItem="AYa-bU-161" secondAttribute="leading" constant="58" id="aGz-U2-5Kt"/>
+                                    <constraint firstItem="rGl-Bc-0eO" firstAttribute="leading" secondItem="AYa-bU-161" secondAttribute="leading" id="fhe-OG-eRe"/>
+                                    <constraint firstItem="oAy-wF-W0e" firstAttribute="trailing" secondItem="rGl-Bc-0eO" secondAttribute="trailing" id="hOr-Na-fN3"/>
+                                    <constraint firstAttribute="bottom" secondItem="JSQ-KC-kbx" secondAttribute="bottom" constant="146" id="lsH-yO-rzz"/>
+                                    <constraint firstAttribute="bottom" secondItem="rGl-Bc-0eO" secondAttribute="bottom" id="nUb-qQ-MW7"/>
+                                    <constraint firstAttribute="trailing" secondItem="rGl-Bc-0eO" secondAttribute="trailing" id="npa-1d-oaB"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y3x-An-8R3" secondAttribute="trailing" id="sAJ-Oy-nOD"/>
+                                    <constraint firstAttribute="bottom" secondItem="oAy-wF-W0e" secondAttribute="bottom" constant="88" id="tXk-Qm-xhD"/>
+                                    <constraint firstItem="oAy-wF-W0e" firstAttribute="leading" secondItem="rGl-Bc-0eO" secondAttribute="leading" id="ulD-gV-g2r"/>
+                                    <constraint firstItem="JSQ-KC-kbx" firstAttribute="leading" secondItem="AYa-bU-161" secondAttribute="leading" constant="147" id="yDe-ix-zwf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AYa-bU-161" firstAttribute="top" secondItem="o6F-bI-0cA" secondAttribute="top" id="0UN-Bm-P8I"/>
+                            <constraint firstItem="o6F-bI-0cA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Sc-dn-B0M"/>
+                            <constraint firstItem="AYa-bU-161" firstAttribute="leading" secondItem="o6F-bI-0cA" secondAttribute="leading" id="C8U-cN-g3d"/>
+                            <constraint firstItem="UXy-d9-mop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sro-8a-oRk"/>
+                            <constraint firstItem="UXy-d9-mop" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V7a-hG-l6a"/>
+                            <constraint firstItem="o6F-bI-0cA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="b1U-dY-FXv"/>
+                            <constraint firstItem="o6F-bI-0cA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dnV-wV-Nbv"/>
+                            <constraint firstItem="AYa-bU-161" firstAttribute="bottom" secondItem="o6F-bI-0cA" secondAttribute="bottom" id="grr-yb-GP3"/>
+                            <constraint firstItem="o6F-bI-0cA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mK2-hB-gHy"/>
+                            <constraint firstItem="AYa-bU-161" firstAttribute="trailing" secondItem="o6F-bI-0cA" secondAttribute="trailing" id="xTk-aQ-5jl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudHolder" destination="AYa-bU-161" id="BwI-E0-BtZ"/>
+                        <outlet property="darkBlueBG" destination="o6F-bI-0cA" id="I1P-7A-aNY"/>
+                        <outlet property="hustleLb" destination="y3x-An-8R3" id="Dsh-04-tgW"/>
+                        <outlet property="onLb" destination="JSQ-KC-kbx" id="9Bu-pe-SFc"/>
+                        <outlet property="powerBTN" destination="UXy-d9-mop" id="h6f-ig-iiw"/>
+                        <outlet property="rocet" destination="oAy-wF-W0e" id="yiE-0G-8Eb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
